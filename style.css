@@ -1,0 +1,600 @@
+body {
+    background-image: url('./img/silver-grade-3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+button {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#js-recipe-search {
+    border: none;
+    border-bottom: 3px solid rgb(166, 192, 250);
+    width: 70%;
+    font-family: 'Indie Flower', cursive;
+    background-color: transparent;
+    font-size: 14px;
+    margin-top: 4px;
+    /* height: 30px; */
+}
+
+#form-element {
+    float: left;
+}
+
+input[type="text"] {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#recipe-search-label {
+    margin-top: 0;
+}
+
+ ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(121, 121, 121, 0.493);
+    opacity: 1;
+    font-family: 'Indie Flower', cursive;
+    /* Firefox */
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: auto;
+}
+
+#h1-title {
+    line-height: 1.4;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#js-priority-label,
+#js-pantry-label,
+option {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+select:focus {
+    outline: none;
+}
+
+#js-recipe-search:focus {
+    outline: none;
+    background: transparent;
+}
+
+label,
+input {
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+#menu-subitems {
+    float: left;
+    font-size: 10px;
+}
+
+​ p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+li p {
+    max-width: 300px;
+    height: 30px;
+    white-space: normal;
+}
+
+.paper {
+    font-size: 20px;
+    line-height: 1.6;
+    /* margin-right: 60px; */
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////// */
+
+
+/* Image Carousel Section */
+
+#scroll-right {
+    position: relative;
+    top: -260px;
+    height: 100px;
+    width: auto;
+    float: right;
+    left: 40px;
+}
+
+#scroll-left {
+    position: relative;
+    top: -260px;
+    height: 100px;
+    left: -40px;
+    width: auto;
+}
+
+
+/* .position-absolute {
+        position: absolute;
+    } */
+
+#recipe-display {
+    overflow-x: scroll;
+    height: 420px;
+    scroll-snap-type: x mandatory;
+    margin-top: 120px;
+    width: auto;
+    padding: 0px;
+    /* box-shadow: -2px 5px 10px -1px; */
+    /* Firefox */
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* Internet Explorer 10+ */
+    /* overflow-y: scroll;
+        white-space: nowrap;
+        scrollbar-width: none; */
+    list-style: none;
+}
+
+#recipe-display::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.recipe-item {
+    min-width: 50%;
+    /* border: 1px solid lightgray; */
+    position: relative;
+    flex: 2 50%;
+    /* display: inline-block; */
+    scroll-snap-align: center;
+    width: 260px;
+    height: 400px;
+    background-image: url('./img/polaroid_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+
+/* .recipe-inner-box {
+        width: 100%;
+        height: 100%;
+       
+    } */
+
+.recipe-image {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    left: 1px;
+    top: -50px;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    border-width: 1px;
+    /* position: center; */
+}
+
+.image-caption {
+    position: absolute;
+    bottom: -4%;
+    width: 70%;
+    padding-left: 70px;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: rgba(77, 77, 77, 0.692); */
+}
+
+.caption-text {
+    width: auto;
+    height: 30px;
+    white-space: normal;
+    /* width: 380px;
+        padding-right: 10px;
+        padding-left: 10px; */
+    color: black;
+    overflow: hidden;
+}
+
+h2.caption-text {
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+h3.caption-text {
+    margin-bottom: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    background-color: rgba(4, 106, 189, 0.132);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////// */
+
+
+/* Recipe Section */
+
+#recipe-name {
+    margin-top: -20px;
+}
+
+#recipe-instructions {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+#missing-ingredients,
+#shopping-list {
+    list-style-type: none;
+}
+
+.carrot-container {
+    position: absolute;
+}
+
+#magnet-carrot {
+    top: -70px;
+    left: -45px;
+    position: absolute;
+    width: 130px;
+    height: auto;
+}
+
+#shopping-list-label {
+    margin-top: -200px;
+    padding-bottom: 12px;
+}
+
+#shopping-list-section {
+    background-color: yellow;
+    max-width: 400px;
+    padding-left: 20px;
+    min-height: 400px;
+    border-radius: 5px;
+    box-shadow: -2px 5px 10px -1px;
+    margin-top: 90px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#magnet-onion {
+    top: -100px;
+    position: relative;
+    left: 260px;
+    width: 160px;
+    height: auto;
+    overflow: hidden;
+}
+
+#handle {
+    position: absolute;
+    width: 240px;
+    height: 3800px;
+    right: 15px;
+    top: 100px;
+    -webkit-filter: drop-shadow(45px 15px 5px #222);
+    filter: drop-shadow(15px 15px 15px #222);
+    /* display: none; */
+}
+
+#magnet-corn {
+    top: -120px;
+    position: absolute;
+    width: 280px;
+    right: 0px;
+    height: auto;
+    pointer-events: none;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 740px) {
+    body {
+        background-image: url('./img/silver-grade-3.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 12px;
+        margin-right: 12px;
+        overflow-x: hidden;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 12px;
+        margin: 40px;
+    }
+    button {
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    #js-recipe-search {
+        border: none;
+        border-bottom: 3px solid rgb(166, 192, 250);
+        width: 70%;
+        font-family: 'Indie Flower', cursive;
+        background-color: transparent;
+        font-size: 14px;
+        margin-top: 4px;
+        /* height: 30px; */
+    }
+    #form-element {
+        float: left;
+    }
+    input[type="text"] {
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    #recipe-search-label {
+        margin-top: 0;
+    }
+     ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgba(121, 121, 121, 0.493);
+        opacity: 1;
+        font-family: 'Indie Flower', cursive;
+        /* Firefox */
+    }
+    input[type=submit] {
+        border-radius: 5px;
+        padding: 14px;
+        margin-bottom: 20px;
+    }
+    .container {
+        margin: auto;
+    }
+    #h1-title {
+        line-height: 1.4;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Indie Flower', cursive;
+    }
+    #js-priority-label,
+    #js-pantry-label,
+    option {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    select:focus {
+        outline: none;
+    }
+    #js-recipe-search:focus {
+        outline: none;
+        background: transparent;
+    }
+    label,
+    input {
+        font-size: 14px;
+        line-height: 1.4;
+        display: inline-block;
+    }
+    #menu-subitems {
+        float: left;
+        font-size: 10px;
+    }
+    ​ p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    li p {
+        max-width: 300px;
+        height: 30px;
+        white-space: normal;
+    }
+    .paper {
+        font-size: 20px;
+        line-height: 1.6;
+        /* margin-right: 60px; */
+    }
+    /* /////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////// */
+    /* Image Carousel Section */
+    #scroll-right {
+        position: relative;
+        top: -260px;
+        height: 100px;
+        width: auto;
+        float: right;
+        left: 40px;
+    }
+    #scroll-left {
+        position: relative;
+        top: -260px;
+        height: 100px;
+        left: -40px;
+        width: auto;
+    }
+    /* .position-absolute {
+            position: absolute;
+        } */
+    #recipe-display {
+        overflow-x: scroll;
+        height: 420px;
+        scroll-snap-type: x mandatory;
+        margin-top: 120px;
+        width: auto;
+        padding: 0px;
+        /* box-shadow: -2px 5px 10px -1px; */
+        /* Firefox */
+        -ms-overflow-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* Internet Explorer 10+ */
+        /* overflow-y: scroll;
+            white-space: nowrap;
+            scrollbar-width: none; */
+        list-style: none;
+    }
+    #recipe-display::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+    }
+    .recipe-item {
+        min-width: 50%;
+        /* border: 1px solid lightgray; */
+        position: relative;
+        flex: 2 50%;
+        /* display: inline-block; */
+        scroll-snap-align: center;
+        width: 260px;
+        height: 400px;
+        background-image: url('./img/polaroid_1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+    }
+    /* .recipe-inner-box {
+            width: 100%;
+            height: 100%;
+           
+        } */
+    .recipe-image {
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        left: 1px;
+        top: -50px;
+        right: 0;
+        bottom: 0;
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        border-color: rgb(199, 199, 199);
+        border-style: solid;
+        border-width: 1px;
+        /* position: center; */
+    }
+    .image-caption {
+        position: absolute;
+        bottom: -4%;
+        width: 70%;
+        padding-left: 70px;
+        /* transform: translate(-50%, -50%); */
+        /* background-color: rgba(77, 77, 77, 0.692); */
+    }
+    .caption-text {
+        width: auto;
+        height: 30px;
+        white-space: normal;
+        /* width: 380px;
+            padding-right: 10px;
+            padding-left: 10px; */
+        color: black;
+        overflow: hidden;
+    }
+    h2.caption-text {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+    h3.caption-text {
+        margin-bottom: 0px;
+    }
+    .hidden {
+        display: none;
+    }
+    .selected {
+        background-color: rgba(4, 106, 189, 0.132);
+    }
+    /* /////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////// */
+    /* Recipe Section */
+    #recipe-name {
+        margin-top: -20px;
+    }
+    #recipe-instructions {
+        background-color: rgba(255, 255, 255, 0.329);
+    }
+    #missing-ingredients,
+    #shopping-list {
+        list-style-type: none;
+    }
+    .carrot-container {
+        position: absolute;
+    }
+    #magnet-carrot {
+        top: -70px;
+        left: -45px;
+        position: absolute;
+        width: 130px;
+        height: auto;
+    }
+    #shopping-list-label {
+        margin-top: -200px;
+        padding-bottom: 12px;
+    }
+    #shopping-list-section {
+        background-color: yellow;
+        max-width: 400px;
+        padding-left: 20px;
+        min-height: 400px;
+        border-radius: 5px;
+        box-shadow: -2px 5px 10px -1px;
+        margin-top: 90px;
+        font-family: 'Indie Flower', cursive;
+    }
+    #magnet-onion {
+        top: -100px;
+        position: relative;
+        left: 260px;
+        width: 160px;
+        height: auto;
+        overflow: hidden;
+    }
+    #handle {
+        position: absolute;
+        width: 240px;
+        height: 3800px;
+        right: 15px;
+        top: 100px;
+        -webkit-filter: drop-shadow(45px 15px 5px #222);
+        filter: drop-shadow(15px 15px 15px #222);
+        /* display: none; */
+    }
+    #magnet-corn {
+        top: -120px;
+        position: absolute;
+        width: 280px;
+        right: 0px;
+        height: auto;
+        pointer-events: none;
+        overflow: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .recipe-item {
+        min-width: 34%;
+    }
+}
