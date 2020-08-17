@@ -12,3 +12,6 @@ Currently the app uses vanilla HTML5, CSS3, and jquery.
 
 In the future, it will integrate with Twillio and let authenticated users SMS the shopping list to their smart phone.
 
+
+![fridge_side_2](https://user-images.githubusercontent.com/8163492/89725054-ed36e480-d9bf-11ea-8cc7-603e153a8510.png)
+
