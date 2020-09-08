@@ -6,8 +6,7 @@ https://www.techrepublic.com/blog/web-designer/how-to-get-the-ruled-paper-backgr
     max-width: 380px;
     max-height: 200px;
     height: 90%;
-    margin: 0 auto;
-    margin-left: 0;
+    margin: auto;
     padding: 60px;
     padding-bottom: 0px;
     position: relative;
@@ -46,4 +45,10 @@ https://www.techrepublic.com/blog/web-designer/how-to-get-the-ruled-paper-backgr
     margin-bottom: -11px;
     height: 60px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#f67272), color-stop(4%, #fff)) 0 100px;
+}
+
+@media only screen and (min-width: 740px) {
+    .index-card {
+        margin-left: 0;
+    }
 }
