@@ -46,9 +46,3 @@ https://www.techrepublic.com/blog/web-designer/how-to-get-the-ruled-paper-backgr
     height: 60px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#f67272), color-stop(4%, #fff)) 0 100px;
 }
-
-@media only screen and (min-width: 740px) {
-    .index-card {
-        margin-left: 0;
-    }
-}

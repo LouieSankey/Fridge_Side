@@ -601,3 +601,36 @@ h3.caption-text {
         min-width: 34%;
     }
 }
+
+@media only screen and (max-width: 430px) {
+    .index-card {
+        padding-right: 0px;
+        padding-left: 40px;
+    }
+    .index-card-head {
+        margin-right: 0px;
+        margin-left: -40px;
+    }
+    input[type=submit] {
+        margin-top: -10px;
+    }
+    #magnet-carrot {
+        width: 110px;
+        height: auto;
+        top: -70px;
+        left: -35px;
+    }
+    #scroll-left,
+    #scroll-right {
+        visibility: hidden;
+    }
+    #magnet-corn {
+        width: 240px;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .index-card {
+        margin-left: 0;
+    }
+}
