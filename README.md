@@ -1,4 +1,4 @@
-#Fridge-Side https://louiesankey.github.io/fridge-side/
+#Fridge-Side https://louiesankey.github.io/fridge_side/
 
 Fridge-Side helps you find recipies that use ingredients you already have in your home and refigerator.
 
