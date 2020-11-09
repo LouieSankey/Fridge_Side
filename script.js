@@ -98,6 +98,30 @@ function onSelectRecipe() {
 
 }
 
+
+
+function scrollRight(){
+    $("#scroll-right").on("click", function(event) {    
+            $('#recipe-display').animate({scrollLeft: "+=500px"
+        }, 50);
+  
+
+    })
+  
+}
+
+function scrollLeft(){
+    $("#scroll-left").on("click", function(event) {           
+            $('#recipe-display').animate({scrollLeft:  "-=500px"
+        }, 50);
+    
+    })
+  
+}
+
+
+
+
 function listRecipeSteps(recipeResponse, selectedRecipe) {
 
     const unusedCount = selectedRecipe.unusedIngredients.length
@@ -174,6 +198,8 @@ function removeFromShoppingList() {
 
 
 $(function() {
+    scrollRight()
+    scrollLeft()
     removeFromShoppingList()
     addToShoppingList()
     watchSearchForm();

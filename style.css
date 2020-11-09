@@ -126,6 +126,7 @@ li p {
     width: auto;
     right: 0;
     float: right;
+    cursor: pointer;
     /* left: -30px; */
 }
 
@@ -135,6 +136,15 @@ li p {
     height: 100px;
     left: -0px;
     width: auto;
+    cursor: pointer;
+}
+
+#scroll-left:hover {
+    background-color: rgb(131, 131, 131);
+}
+
+#scroll-right:hover {
+    background-color: rgb(131, 131, 131);
 }
 
 
@@ -146,6 +156,7 @@ li p {
     overflow-x: scroll;
     height: 420px;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     margin-top: 120px;
     width: auto;
     padding: 0px;
