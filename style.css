@@ -649,7 +649,7 @@ h3.caption-text {
 
 @media only screen and (max-width: 430px) {
     body {
-        margin-left: 0px;
+        /* margin-left: 6px; */
     }
     #magnet-onion {
         left: 170px;
