@@ -429,6 +429,19 @@ h3.caption-text {
         line-height: 1.6;
         /* margin-right: 60px; */
     }
+    #send-to-phone {
+        font-size: 16px;
+        bottom: 0;
+        position: absolute;
+        right: 0px;
+        margin-right: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(44, 66, 4);
+    }
+    #send-to-phone:hover {
+        color: rgb(134, 134, 134);
+    }
     /* /////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////// */
     /* Image Carousel Section */
@@ -577,6 +590,7 @@ h3.caption-text {
         box-shadow: -2px 5px 10px -1px;
         margin-top: 90px;
         font-family: 'Indie Flower', cursive;
+        position: relative;
     }
     #magnet-onion {
         top: -100px;
@@ -607,6 +621,26 @@ h3.caption-text {
     }
 }
 
+.bottom-form-label {
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+    float: left;
+}
+
+.bottom-form-input {
+    margin-top: 40px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bottom-form-button {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 @media only screen and (min-width: 1000px) {
     .recipe-item {
         min-width: 34%;
@@ -614,6 +648,12 @@ h3.caption-text {
 }
 
 @media only screen and (max-width: 430px) {
+    body {
+        margin-left: 0px;
+    }
+    #magnet-onion {
+        left: 170px;
+    }
     .index-card {
         padding-right: 0px;
         padding-left: 40px;
