@@ -7,42 +7,42 @@
 
     <title>Use what's in your fridge.</title>
 
-    <link href=" paper.css " rel="stylesheet " type="text/css " />
-    <link href="index-card.css " rel="stylesheet " type="text/css " />
-    <link href="style.css " rel="stylesheet " type="text/css " />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap " rel="stylesheet ">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Oxygen:wght@300&family=Quicksand:wght@300&display=swap " rel="stylesheet ">
+    <link href="paper.css" rel="stylesheet" type="text/css" />
+    <link href="index-card.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans&family=Oxygen:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="container ">
-        <!-- <img id="handle " src="./img/fridge_handle_final.png "> -->
+    <div class="container">
+        <!-- <img id="handle" src="./img/fridge_handle_final.png"> -->
 
-        <div class="index-card ">
-            <article class="index-card-head "></article>
-            <img id="magnet-carrot " src="./img/carrot.png " alt="a refrigerator magnet shaped like a carrot. ">
+        <div class="index-card">
+            <article class="index-card-head"></article>
+            <img id="magnet-carrot" src="./img/carrot.png" alt="a refrigerator magnet shaped like a carrot.">
 
-            <h1 id="h1-title ">What's in your fridge?</h1>
+            <h1 id="h1-title">What's in your fridge?</h1>
 
-            <form id="js-form ">
-                <div id="form-element ">
-                    <label for="js-recipe-search ">Enter foods you already have in your home to get back the most relevant recipes:  
-                        <input type="text " name="recipe-search " id="js-recipe-search " value=" " placeholder="carrots, mushrooms, etc. "></label>
+            <form id="js-form">
+                <div id="form-element">
+                    <label for="js-recipe-search">Enter foods you already have in your home to get back the most relevant recipes:  
+                        <input type="text" name="recipe-search" id="js-recipe-search" value="" placeholder="carrots, mushrooms, etc."></label>
 
                 </div>
 
-                <input type="submit " value="GO! ">
+                <input type="submit" value="GO!">
                 <br/>
-                <div id="menu-subitems ">
-                    <label id="js-pantry-label " for="js-pantry ">Include pantry items like flour, salt, etc. </label>
-                    <input type="checkbox " name="pantry " id="js-pantry " value="true " checked>
+                <div id="menu-subitems">
+                    <label id="js-pantry-label" for="js-pantry">Include pantry items like flour, salt, etc. </label>
+                    <input type="checkbox" name="pantry" id="js-pantry" value="true" checked>
                     <br/>
-                    <label id="js-priority-label " for="js-priority "> Prioritize:</label>
-                    <select name="max-missing-ingredients " id="js-priority ">  
-                        <option value="1 ">Fewest Missing Ingredients</option>
-                        <option value="2 ">Maximize Your Ingredients Used</option>
+                    <label id="js-priority-label" for="js-priority"> Prioritize:</label>
+                    <select name="max-missing-ingredients" id="js-priority">  
+                        <option value="1">Fewest Missing Ingredients</option>
+                        <option value="2">Maximize Your Ingredients Used</option>
                     </select>
 
                 </div>
@@ -51,48 +51,48 @@
 
         </div>
 
-        <section id='main-display' class="hidden ">
+        <section id='main-display' class="hidden">
 
 
-            <!-- <img src="./img/scroll-right.png "> -->
+            <!-- <img src="./img/scroll-right.png"> -->
 
-            <div class="position-absolute ">
-                <ul id="recipe-display "></ul>
-                <img id="scroll-left " src="./img/scroll_arrow_left.png ">
-                <img id="scroll-right " src="./img/scroll_arrow_right.png ">
+            <div class="position-absolute">
+                <ul id="recipe-display"></ul>
+                <img id="scroll-left" src="./img/scroll_arrow_left.png">
+                <img id="scroll-right" src="./img/scroll_arrow_right.png">
             </div>
 
 
 
-            <section class="paper ">
-                <article class="head ">
-                    <img id="magnet-corn " src="./img/corn.png " alt="a refrigerator magnet shaped like corn ">
+            <section class="paper">
+                <article class="head">
+                    <img id="magnet-corn" src="./img/corn.png" alt="a refrigerator magnet shaped like corn">
                 </article>
 
-                <h2 id="recipe-name ">Recipe</h2>
+                <h2 id="recipe-name">Recipe</h2>
 
-                <section id="recipe-instructions-section ">
-                    <ol id="recipe-instructions "></ol>
+                <section id="recipe-instructions-section">
+                    <ol id="recipe-instructions"></ol>
                 </section>
 
                 <h3>Unused Ingredients</h3>
-                <section id="unused-ingredients-section ">
-                    <ul id="unused-ingredients ">
+                <section id="unused-ingredients-section">
+                    <ul id="unused-ingredients">
                         <li></li>
                     </ul>
                 </section>
 
                 <h3>Missing Ingredients (Add to shopping list with '+')</h3>
-                <section id="missing-ingredients-section ">
-                    <ul id="missing-ingredients "></ul>
+                <section id="missing-ingredients-section">
+                    <ul id="missing-ingredients"></ul>
                 </section>
 
 
 
-                <section id="shopping-list-section ">
-                    <img id="magnet-onion " src="./img/onion.png " alt="a refrigerator magnet shaped like an onion. ">
-                    <h2 id="shopping-list-label ">Shopping List </h2>
-                    <ul id="shopping-list "></ul>
+                <section id="shopping-list-section">
+                    <img id="magnet-onion" src="./img/onion.png" alt="a refrigerator magnet shaped like an onion. ">
+                    <h2 id="shopping-list-label">Shopping List </h2>
+                    <ul id="shopping-list"></ul>
 
                 </section>
 
@@ -105,20 +105,20 @@
 
 
 
-                <p id="js-error-message " class="error-message "></p>
+                <p id="js-error-message" class="error-message"></p>
 
             </section>
-            <form action="/action_page.php ">
-                <label class="bottom-form-label " for="phone ">Text this list to my phone:</label>
-                <input class="bottom-form-input " type="tel " id="phone " name="phone " placeholder="Format: 123-45-678 " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} " required><br><br>
-                <input class="bottom-form-button " value="SEND " type="submit ">
+            <form action="/action_page.php">
+                <label class="bottom-form-label" for="phone">Text this list to my phone:</label>
+                <input class="bottom-form-input" type="tel" id="phone" name="phone" placeholder="Format: 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                <input class="bottom-form-button" value="SEND" type="submit">
             </form>
         </section>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
-        <script src="./script.js "></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
