@@ -35,17 +35,13 @@ function displayRecipeSelection(responseJson) {
     $('#main-display').removeClass("hidden");
     $("#recipe-display").html("")
 
-    //implement a more dynamic slider here
- 
 
+    allRecipesJson.forEach((obj, i) => {
 
-    allRecipesJson.forEach((obj, i) => { 
-
-        console.log(JSON.stringify(obj))
-            const priority = $("#js-priority").val();
-            if (priority == 1) {
-                $("#recipe-display").append(
-                    $(`
+        const priority = $("#js-priority").val();
+        if (priority == 1) {
+            $("#recipe-display").append(
+                $(`
         <li class="recipe-item" id="${i}"><a href="#" >
      
             <div class="image-caption">
@@ -57,9 +53,9 @@ function displayRecipeSelection(responseJson) {
 
       
         </a></li>`))
-            } else {
-                $("#recipe-display").append(
-                    $(`
+        } else {
+            $("#recipe-display").append(
+                $(`
         <li class="recipe-item" id="${i}"><a href="#">
         <div class="image-caption">
         <h3 class="caption-text">Your Ingredients Used: ${obj.usedIngredientCount} </h3>
@@ -69,9 +65,8 @@ function displayRecipeSelection(responseJson) {
         </div>
         <img class="recipe-image" src="https://${obj.image}" alt="An image of ${obj.title}">
         </a></li>`))
-            }
-        })
-        //todo: add prefix to ids 0..n
+        }
+    })
     $('#recipe-display').find('#0').click()
     $('#recipe-display').find('#0').addClass("selected")
 }
@@ -80,7 +75,7 @@ function displayRecipeSelection(responseJson) {
 
 function onSelectRecipe() {
 
-    $('#recipe-display').on('click', '.recipe-item', function(elem) {
+    $('#recipe-display').on('click', '.recipe-item', function (elem) {
         elem.preventDefault();
         const recipeIndex = $(this).attr('id')
         const selectedRecipeId = allRecipesJson[recipeIndex].id
@@ -100,23 +95,25 @@ function onSelectRecipe() {
 
 
 
-function scrollRight(){
-    $("#scroll-right").on("click", function(event) {    
-            $('#recipe-display').animate({scrollLeft: "+=500px"
+function scrollRight() {
+    $("#scroll-right").on("click", function (event) {
+        $('#recipe-display').animate({
+            scrollLeft: "+=500px"
         }, 50);
-  
+
 
     })
-  
+
 }
 
-function scrollLeft(){
-    $("#scroll-left").on("click", function(event) {           
-            $('#recipe-display').animate({scrollLeft:  "-=500px"
+function scrollLeft() {
+    $("#scroll-left").on("click", function (event) {
+        $('#recipe-display').animate({
+            scrollLeft: "-=500px"
         }, 50);
-    
+
     })
-  
+
 }
 
 
@@ -168,7 +165,7 @@ function listRecipeSteps(recipeResponse, selectedRecipe) {
 
 
 function addToShoppingList() {
-    $('#missing-ingredients').on('click', '.select-ingredient-button', function(elem) {
+    $('#missing-ingredients').on('click', '.select-ingredient-button', function (elem) {
         elem.preventDefault();
 
         const recipeIndex = $(this).attr('id')
@@ -184,7 +181,7 @@ function addToShoppingList() {
 
 
 function removeFromShoppingList() {
-    $('#shopping-list').on('click', '.shopping-list-item-button', function(elem) {
+    $('#shopping-list').on('click', '.shopping-list-item-button', function (elem) {
         elem.preventDefault();
         const removedIngredient = $(this).siblings('span').text()
         const index = shoppingList.indexOf(removedIngredient);
@@ -197,7 +194,7 @@ function removeFromShoppingList() {
 }
 
 
-$(function() {
+$(function () {
     scrollRight()
     scrollLeft()
     removeFromShoppingList()
