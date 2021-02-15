@@ -1,5 +1,7 @@
 body {
-    background-image: url('./img/silver.png');
+    /* background-image: url('./img/fridge.jpeg'); */
+    /* background-image: url('./img/fridge.jpeg'); */
+    background-color: rgb(238, 238, 238);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -327,7 +329,8 @@ h3.caption-text {
 
 @media only screen and (min-width: 740px) {
     body {
-        background-image: url('./img/silver.png');
+        /* background-image: url('./img/fridge.jpeg'); */
+        background-color: rgb(238, 238, 238);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -337,6 +340,7 @@ h3.caption-text {
         font-family: 'Quicksand', sans-serif;
         font-size: 12px;
         margin: 40px;
+        margin-top: 70px;
     }
     button {
         border-radius: 5px;
