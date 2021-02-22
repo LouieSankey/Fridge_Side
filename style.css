@@ -222,7 +222,8 @@ li p {
 }
 
 .caption-text {
-    width: auto;
+    width: 280px;
+    margin: auto;
     height: 30px;
     white-space: normal;
     /* width: 380px;
@@ -234,7 +235,8 @@ li p {
 
 h2.caption-text {
     margin-top: 0px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    height: 44px;
 }
 
 h3.caption-text {
@@ -522,9 +524,9 @@ h3.caption-text {
     .image-caption {
         position: absolute;
         bottom: -4%;
-        width: 70%;
+        width: 60%;
         text-align: left;
-        padding-left: 70px;
+        padding-left: 90px;
         /* transform: translate(-50%, -50%); */
         /* background-color: rgba(77, 77, 77, 0.692); */
     }
@@ -539,6 +541,7 @@ h3.caption-text {
         overflow: hidden;
     }
     h2.caption-text {
+        height: 16px;
         margin-top: 0px;
         padding-bottom: 30px;
     }
