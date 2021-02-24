@@ -631,6 +631,7 @@ h3.caption-text {
 .bottom-form-input {
     margin-top: 40px;
     border: none;
+    background: transparent;
     border-bottom: 3px solid rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
@@ -639,6 +640,8 @@ h3.caption-text {
 .bottom-form-button {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    width: 100px;
+    height: 40px;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -178,6 +178,44 @@ function addToShoppingList() {
     })
 }
 
+function sendWithTwillio() {
+
+    
+    $('#send-list').on('click', '.bottom-form-button', function (elem) {
+        elem.preventDefault();
+
+
+
+        let list = shoppingList.map(item => {
+            return item.trim() + '\n'
+        })
+
+        list = list.toString().replaceAll(',', '')
+        const phone = '+1' + $('.bottom-form-input').val().replace('-', '')
+      
+        fetch('https://whispering-sierra-15762.herokuapp.com/', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({phone: phone, shopping_list: list})
+        })
+        .then(res=>res.json())
+        
+
+        $('.bottom-form-button').text("LIST SENT!")
+
+        setTimeout(() => {
+            $('.bottom-form-button').text("SEND")
+        }, 3000);
+
+
+      
+ 
+
+    })
+}
 
 
 function removeFromShoppingList() {
@@ -201,4 +239,5 @@ $(function () {
     addToShoppingList()
     watchSearchForm();
     onSelectRecipe()
+    sendWithTwillio()
 });
