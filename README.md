@@ -1,9 +1,12 @@
+## FridgeSide
+
+Client built with HTML, CSS, JQUERY, and the Spoonacular API.
 
 Live App https://louiesankey.github.io/fridge_side/
 
 Server Repo https://github.com/LouieSankey/fridge-server
 
-##Fridge-Side
+## FridgeSide
 
 Fridge-side is a recipes search app with a memorable UI that lets you find new recipes based on ingredients you already have in your home.
 
