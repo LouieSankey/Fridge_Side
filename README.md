@@ -1,17 +1,19 @@
-#Fridge-Side https://louiesankey.github.io/fridge_side/
+## Fridge Side
 
-Fridge-Side helps you find recipies that use ingredients you already have in your home and refigerator.
+Client built with HTML, CSS, JQUERY, and the Spoonacular API.
 
-It let's you prioritize search results based on fewest missing ingredients, so you can find recipes where you only need to buy one or two more items, and it also lets you prioritize maximum ingredients used, so you can efficiently use up whatever leftovers you already have in your refigerator.
+Live App https://louiesankey.github.io/fridge_side/
 
-It also lets you compile a shopping list to keep track of missing ingredients across multiple recipes.
+Server Repo https://github.com/LouieSankey/fridge-server
 
-The app features a throwback design with an index card, polaroid photos, and note paper stuck to the side of a refrigerator with magnets.
+## About
 
-Currently the app uses vanilla HTML5, CSS3, and jquery.
+Fridge-side is a recipes search app with a memorable UI that lets you find new recipes based on ingredients you already have in your home.
 
-In the future, it will integrate with Twillio and let authenticated users SMS the shopping list to their smart phone.
+After adding missing ingredients to a shopping list, Fridge-side lets you send the list to your phone via SMS for easy access next time you're grocery shopping.
 
+Go ahead and give it a try!
 
-![fridge_side_2](https://user-images.githubusercontent.com/8163492/89725054-ed36e480-d9bf-11ea-8cc7-603e153a8510.png)
+![fridge-side-new](https://user-images.githubusercontent.com/8163492/110541346-75a77000-80dc-11eb-8610-e9ddea6db0d8.png)
+
 
