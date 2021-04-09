@@ -1,10 +1,13 @@
 body {
     /* background-image: url('./img/fridge.jpeg'); */
-    /* background-image: url('./img/fridge.jpeg'); */
+    background-image: url('./img/refrigbackground.jpeg');
     background-color: rgb(238, 238, 238);
-    background-position: center;
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: unset;
+    background-size: auto;
+    background-repeat: repeat;
     overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
@@ -329,13 +332,26 @@ h3.caption-text {
     overflow: auto;
 }
 
+.freezer-separator {
+    height: 28px;
+    background-color: black;
+    border: solid 2px darkgray;
+    margin-bottom: 140px;
+    width: 130%;
+    margin-left: -50px;
+}
+
 @media only screen and (min-width: 740px) {
     body {
+        background-image: url('./img/refrigbackground.jpeg');
         /* background-image: url('./img/fridge.jpeg'); */
         background-color: rgb(238, 238, 238);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        /* background-position: unset;
+        background-size: auto;
+        background-repeat: repeat; */
         margin-left: 12px;
         margin-right: 12px;
         overflow-x: hidden;
@@ -651,6 +667,15 @@ h3.caption-text {
 }
 
 @media only screen and (max-width: 430px) {
+    .freezer-separator {
+        height: 28px;
+        background-color: black;
+        border: solid 2px darkgray;
+        margin-bottom: 140px;
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 104%
+    }
     body {
         margin-left: 6px;
     }
