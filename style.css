@@ -239,6 +239,7 @@ li p {
 h2.caption-text {
     margin-top: 0px;
     margin-bottom: 30px;
+    width:200px;
     height: 44px;
 }
 
@@ -444,6 +445,9 @@ h3.caption-text {
         line-height: 1.6;
         /* margin-right: 60px; */
     }
+    #send-list{
+        display: inline-block;
+    }
     #send-to-phone {
         font-size: 16px;
         bottom: 0;
@@ -540,9 +544,11 @@ h3.caption-text {
     .image-caption {
         position: absolute;
         bottom: -4%;
-        width: 60%;
-        text-align: left;
-        padding-left: 90px;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        
+  
         /* transform: translate(-50%, -50%); */
         /* background-color: rgba(77, 77, 77, 0.692); */
     }
