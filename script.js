@@ -63,7 +63,7 @@ function displayRecipeSelection(responseJson) {
    
         
         </div>
-        <img class="recipe-image" src="https://${obj.image}" alt="An image of ${obj.title}">
+        <img class="recipe-image" src="${obj.image}" alt="An image of ${obj.title}">
         </a></li>`))
         }
     })
