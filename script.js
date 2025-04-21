@@ -1,6 +1,6 @@
 'use strict';
 
-const apiKey = "fc1dcd8749f4481a87f860e26a364b00"
+const apiKey = ""
 let allRecipesJson;
 let shoppingList = [];
 
